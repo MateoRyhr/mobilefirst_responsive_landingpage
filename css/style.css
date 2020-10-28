@@ -68,6 +68,10 @@ body{
     font-size: 1.2rem;
 }
 
+.picture{
+    display: none;
+}
+
 .footer{
     grid-area: footer;
     height: 50px;

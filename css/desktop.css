@@ -78,6 +78,9 @@ body{
 .aside_article-text{
     font-size: 1.4rem;
 }
+.picture{
+    display: none;
+}
 
 .footer{
     grid-area: footer;
