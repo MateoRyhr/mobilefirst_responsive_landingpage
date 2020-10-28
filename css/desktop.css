@@ -15,11 +15,11 @@ body{
     background-color: #2b2e4a;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
-    grid-template: 50px 1fr 1fr 50px / 1fr;
-    grid-template-areas: "header"
-                         "main"
-                         "aside"
-                         "footer";
+    grid-template: 100px 1fr 1fr 100px / 1fr 1fr;
+    grid-template-areas: "header header"
+                         "main aside"
+                         "main aside"
+                         "footer footer";
 }
 
 .header{
@@ -30,7 +30,7 @@ body{
 
 .header_nav{
     display: flex;
-    height: 50px;
+    height: 100px;
     align-items: center;
 }
 
@@ -53,32 +53,35 @@ body{
 
 .main{
     grid-area: main;
-    align-self: center;
     background-color: #2b2e4a;
+    align-self: center;
+    max-width: 400px;
     padding: 0 10%;
 }
 .main_text{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .aside{
     grid-area: aside;
-    align-self: center;
     background-color: #2b2e4a;
+    align-self: center;
+    max-width: 400px;
     padding: 0 10%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .aside_article{
-    width: 45%;
+    width: 100%;
 }
 .aside_article-text{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .footer{
     grid-area: footer;
-    height: 50px;
+    height: 100px;
     background-color: #903749;
     display: flex;
     align-items: center;
@@ -86,8 +89,8 @@ body{
     
 }
 .footer_text{
-    margin-left: 5%;
     font-size: 1.2rem;
+    margin-left: 5%;
 }
 .footer_icon-container{
     width: 9rem;
